@@ -1,0 +1,15 @@
+$size: (
+  xxs   :   0.75 + rem,
+  xs    :   1 + rem,
+  sm    :   1.25 + rem,
+  m     :   1.5 + rem,
+  l     :   1.75 + rem,
+  xl    :   2 + rem,
+  xxl   :   2.5 + rem,
+  xxxl  :   2.75 + rem,
+  xxxxl :   3 + rem,
+);
+
+@function font-size($name) {
+  @return map-get($size, $name);
+}

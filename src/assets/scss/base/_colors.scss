@@ -1,0 +1,18 @@
+$colors: (
+  0         : #000,    // Noir ténèbres
+  f         : #fff,    // Blanc divin
+  primary   : #36A9E0, // Bleu primary
+  secondary : #FED330, // Jaune secondary
+  warning   : #FE9730, // Orange warning
+  success   : #4DC722, // Vert success
+  danger    : #FE3030, // Rouge danger
+  text      : #3D3D3D, // Noir texte
+  cancel    : #95989A, // Cancel
+  light     : #EEF4F8, // Background bleu
+  border    : #CCDCE6, // Border
+  shadow    : #D9E6EF, // Shadow
+);
+
+@function color($name) {
+  @return map-get($colors, $name);
+}

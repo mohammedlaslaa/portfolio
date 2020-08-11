@@ -1,0 +1,11 @@
+@import '../../assets/scss/utilities/utilities.scss';
+
+.HeaderMenuList {
+  list-style:none;
+  justify-content: center;
+  font-size: font-size(m);
+  text-transform: uppercase;
+  li{
+    margin: 0.8rem 2.5rem;
+  }
+}

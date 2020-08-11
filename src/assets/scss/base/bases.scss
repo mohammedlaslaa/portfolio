@@ -1,0 +1,92 @@
+/* FLEX */
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+@each $key, $value in $breakpoints {
+  @for $i from 10 through 100 {
+    .w-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        width: $i + '%';
+      }
+    }
+
+    .h-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        height: $i + '%';
+      }
+    }
+
+    .p-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        padding: $i + '%';
+      }
+    }
+
+    .pl-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        padding-left: $i + '%';
+      }
+    }
+
+    .pt-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        padding-top: $i + '%';
+      }
+    }
+
+    .pr-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        padding-right: $i + '%';
+      }
+    }
+
+    .pb-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        padding-bottom: $i + '%';
+      }
+    }
+    .m-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        margin: $i + '%';
+      }
+    }
+
+    .ml-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        margin-left: $i + '%';
+      }
+    }
+
+    .mt-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        margin-top: $i + '%';
+      }
+    }
+
+    .mr-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        margin-right: $i + '%';
+      }
+    }
+
+    .mb-#{$key}-#{$i} {
+      @include media-breakpoint-up($key) {
+        margin-bottom: $i + '%';
+      }
+    }
+  }
+}
