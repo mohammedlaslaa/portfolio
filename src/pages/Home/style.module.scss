@@ -1,5 +1,8 @@
-$var: #ae79fc;
+.avatar {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-.hello {
-  color: $var;
+.wrapper, .cursor {
+  font-size: 80px;
 }
